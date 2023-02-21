@@ -1,4 +1,4 @@
-import 'package:alpr_research/image-process-plate-detect.dart';
+import 'package:alpr_research/image-process-plate-detect-pytorchlite.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 

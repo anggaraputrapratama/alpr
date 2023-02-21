@@ -60,6 +60,35 @@
 //       _imagePath = imagePath;
 //     });
 //   }
+// Future<void> getImageFromGallery() async {
+// // Generate filepath for saving
+//     String imagePath = join((await getApplicationSupportDirectory()).path,
+//         "${(DateTime.now().millisecondsSinceEpoch / 1000).round()}.jpeg");
+
+//     print("$imagePath : _imagePath");
+
+//     try {
+//       //Make sure to await the call to detectEdgeFromGallery.
+//       bool success = await EdgeDetection.detectEdgeFromGallery(imagePath,
+//         androidCropTitle: 'Crop', // use custom localizations for android
+//         androidCropBlackWhiteTitle: 'Black White',
+//         androidCropReset: 'Reset',
+//       );
+//       print("success: $success");
+//     } catch (e) {
+//       print(e);
+//     }
+
+//     // If the widget was removed from the tree while the asynchronous platform
+//     // message was in flight, we want to discard the reply rather than calling
+//     // setState to update our non-existent appearance.
+//     if (!mounted) return;
+
+//     setState(() {
+//       _imagePath = imagePath;
+//     });
+//   }
+
 
 //   @override
 //   Widget build(BuildContext context) {
